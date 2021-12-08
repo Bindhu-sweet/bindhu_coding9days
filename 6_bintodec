@@ -1,0 +1,51 @@
+#include <stdio.h>
+
+#include <conio.h>
+
+
+
+int main()
+
+{
+
+long int d;
+
+int i=0,a[100],j=0;
+
+printf("\tDecimal To Binary Number Converter in C");
+
+printf("\n\n");
+
+printf("\tEnter the Decimal No.:");
+
+scanf("%d",&d);
+
+while(d>0)
+
+{
+
+a[i]=d%2;
+
+d=d/2;
+
+i++;
+
+}
+
+printf("\n\n");
+
+printf("\tBinary Number Equivalent : ");
+
+for (j=i-1;j>=0;j--)
+
+printf("%d",a[j]);
+
+printf("\n\n");
+
+printf("\tEnd of Program");
+
+printf("\n");
+
+getch();
+
+}
